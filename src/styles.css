@@ -1,19 +1,30 @@
 /* === SUPER BASIC CSS RESET === */
 
+@font-face {
+    font-family: 'latobold';
+    src: url('./fontage/fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('./fontage/fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+html, body {
+  overflow: hidden;
+}
 body {
-  font-family: sans-serif;
-  background-color: #fff;
+  font-family: "latobold";
+  background-color: #3d8060;
   color: #000;
   height: 100vh;
 }
 header {
-    background-color: blue;
+    background-color: #2d6969;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 #content{
     display: flex;
@@ -21,19 +32,43 @@ header {
     align-items: center;
     height: 100%;
     width: 100%;
+    
 }
 .containers{
 display: flex;
 flex-direction: column;
-background-color: burlywood;
+background-color: #479c9c;
 align-items: center;
 width: 40%;
 height: 80%;
 position: relative;
+border-radius: 1rem;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+margin-top: 2rem;
 }
 .hidden{
  visibility: hidden;
  position: absolute;
+}
+nav{
+  display: flex;
+
+  column-gap: 2rem;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+nav > *{
+  height:4rem;
+  width: 7rem;
+ background: none;
+  border: none;
+  color: aliceblue;
+  font-size: 1rem;
+}
+nav > *:hover{
+ cursor: pointer;
+ background-color: #245353;
 }
 .menu1{
   width: 90%;
@@ -62,16 +97,33 @@ img{
 }
 #menu1btn{
   position: absolute;
-  bottom: 0;
+  bottom: 2rem;
   left :2rem;
+  width: 4rem;
+  height: 2rem;
 }
 #menu2btn{
     position: absolute;
-  bottom: 0;
+  bottom: 2rem;
+   width: 4rem;
+  height: 2rem;
   
 }
 #menu3btn{
   position: absolute;
-  bottom: 0;
+  bottom: 2rem;
   right :2rem;
+   width: 4rem;
+  height: 2rem;
+  
+}
+#menu1btn,#menu2btn,#menu3btn{
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  background-color: #41afaf;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#menu3btn:hover,#menu2btn:hover,#menu1btn:hover{
+  cursor: pointer;
+  background-color: #3a9a9a;
 }
