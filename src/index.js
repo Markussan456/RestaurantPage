@@ -22,7 +22,7 @@ class handlemenu{
 
 menu1handler(){
     
-    this.menu1show.textContent = "Menu 1";
+    this.menu1show.textContent = "Appetizers";
     this.menu1show.id = "menu1btn";
     this.menu1show.addEventListener("click",()=>{
       adddom.showmenu();
@@ -33,7 +33,7 @@ menu1handler(){
 }
 menu2handler(){
     let hidden = true;
-     this.menu2show.textContent = "Allergens";
+     this.menu2show.textContent = "Main course";
      this.menu2show.id = "menu2btn";
     this.menu2show.addEventListener("click",()=>{
 menu2.showmenu();
@@ -44,7 +44,7 @@ menu2.showmenu();
 }
 menu3handler(){
  
-     this.menu3show.textContent = "third";
+     this.menu3show.textContent = "Beverages";
      this.menu3show.id = "menu3btn";
     this.menu3show.addEventListener("click",()=>{
 menu3.showmenu();

@@ -14,7 +14,7 @@ class createdomelemnts{
     addlegend(){
      
 this.legend1 = document.createElement("Legend");
-this.legend1.textContent = "Menu";
+this.legend1.textContent = "Appetizers";
 this.menu1cont.appendChild(this.legend1);
 
 
@@ -23,11 +23,36 @@ this.menu1cont.appendChild(this.legend1);
     addimage(){
         const food = document.createElement("p");
         this.menu1cont.appendChild(food);
-        food.textContent = "Filet mignon Steak";
-const image = document.createElement('img');
+        food.textContent = "Bread";
+         const price = document.createElement("p");
+        this.menu1cont.appendChild(price);
+        price.textContent = "15$";
+        const food1 = document.createElement("p");
+        this.menu1cont.appendChild(food1);
+        food1.textContent = "Fries";
+        const price1 = document.createElement("p");
+        this.menu1cont.appendChild(price1);
+        price1.textContent = "25$";
+        const food2 = document.createElement("p");
+        this.menu1cont.appendChild(food2);
+        food2.textContent = "Salad";
+        const price2 = document.createElement("p");
+        this.menu1cont.appendChild(price2);
+        price2.textContent = "15$";
+        const food3 = document.createElement("p");
+        this.menu1cont.appendChild(food3);
+        food3.textContent = "Mozarella sticks";
+        const price3 = document.createElement("p");
+        this.menu1cont.appendChild(price3);
+        price3.textContent = "15$";
+        const food4 = document.createElement("p");
+        this.menu1cont.appendChild(food4);
+        food4.textContent = "Boiled potatoes";
+        const price4 = document.createElement("p");
+        this.menu1cont.appendChild(price4);
+        price4.textContent = "15$";
+        
 
-image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5X21V7zUr8ihio6ZHmDHLhp-e3uRDV8UD_Q&s";
-this.menu1cont.appendChild(image);
     }
   
     menu1add(){
